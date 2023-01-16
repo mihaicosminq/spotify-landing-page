@@ -1,0 +1,177 @@
+.spotifyContentBackground {
+  background-color: rgb(29, 117, 222);
+  --text-base: #ffffff;
+  color: var(--text-base, "#FFF");
+  text-align: left;
+  overflow: auto;
+}
+.ButtonInner-sc-14ud5tc-0eUyfdqsc-jrsJWtgNCnmwsc-kEqXSaexRBIa{
+  color:white;
+}
+.ButtonInner-sc-14ud5tc-0jCySCSsc-jrsJWtgNCnmwsc-kEqXSafTvsDS{
+  color:white;
+}
+
+.spotifyContentArticle {
+  font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 480px;
+}
+
+.spotifyContentHeader {
+  flex-direction: row;
+
+  flex-grow: 1;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.spotifyContentText {
+  text-align: inherit;
+  padding-bottom: 72px;
+  width: 100%;
+}
+
+.spotifyContenth1 {
+  width: auto;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 900;
+  max-width: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+.spotifyContenth2 {
+  line-height: 1.5;
+  margin: -30px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.spotifyContentButton {
+  margin: 35px 0px 0px;
+  display: block;
+}
+
+.button1 {
+  position: relative;
+  background: black;
+  color: var(--text-base, #000000);
+  border-radius: 500px;
+  font-size: inherit;
+  padding-block: 14px;
+  padding-inline: 32px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border: 2px solid rgb(25, 20, 20);
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.button1:hover {
+  box-shadow: none;
+  transform: scale(1.1);
+}
+
+.button2 {
+  width: auto;
+  box-sizing: border-box;
+  position: relative;
+  color: #1d75de;
+  border-radius: 500px;
+  font-size: inherit;
+  padding-block: 14px;
+  padding-inline: 32px;
+  --background-base: #737373 !important;
+  border: 2px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.button2:hover {
+  box-shadow: none;
+  transform: scale(1.1);
+}
+
+.spotifyContentButtons {
+  display: flex;
+}
+
+.spotifyContentFooter {
+  font-size: 12px;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.spotifyFooterParagraph {
+  max-width: 630px;
+  display: inline-block;
+}
+.Button-qlcn5g-0eJSmcN {
+  text-decoration: none;
+}
+@media screen and (max-width: 769px) {
+  .spotifyContentBackground {
+    padding-bottom: 48px;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  .spotifyContentButtons {
+    box-sizing: border-box;
+    position: absolute;
+    display: block !important;
+    margin: 20px 0;
+    padding-left: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .button1,.button2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .spotifyContenth1 {
+    padding-left: 20px;
+    font-size: 28px;
+    padding-bottom: 40px;
+  }
+  .spotifyContenth2 {
+    font-size: 12px;
+    padding-left: 25px;
+    font-weight: lighter;
+  }
+  .spotifyContentFooter {
+    padding-left: 25px;
+  }
+  .button1:hover {
+    box-shadow: none;
+    transform: scale(1.1);
+  }
+  .button2:hover {
+    box-shadow: none;
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 1200px) {
+  .spotifyContenth1 {
+    margin-bottom: 40px;
+  }
+  .spotifyContenth2 {
+    margin-bottom: 40px;
+  }
+  .spotifyContentArticle{
+    width:1065px;
+  }
+}

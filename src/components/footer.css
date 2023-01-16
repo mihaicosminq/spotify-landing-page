@@ -1,0 +1,117 @@
+#footer{
+    padding: 80px 0 50px;
+    background: black;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.logo{
+    padding: 0 15px;
+    box-sizing:border-box;
+    flex: 0 0 auto;
+    height: 35px;
+    width: 150px;
+}
+.sub-title{
+    display:flex;
+    flex:0 0 auto;
+    flex-direction: column;
+}
+.links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grey-text{
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding-right:25px;
+    padding-bottom: 10px;
+    margin:0;
+    flex:1 0;
+
+}
+.list-item{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:white;
+    padding: 3px 0 15px;
+}
+.list-item:hover{
+    color:greenyellow;
+}
+.socials{
+    margin: 0 15px 0 auto;
+}
+.social-list{
+    margin: 20px 0 0;
+    padding: 0;
+    display:inline-block;
+}
+.social-icon{
+    width: 54px;
+    height:46px;
+    fill:white;
+    display:inline-block;
+}
+
+.social-item{
+    display:inline-block;
+}
+
+.bottom-links{
+    width: 100%;
+    display:flex;
+}
+.bottomlink-list{
+    margin: 0 45px 0 0;
+    padding: 0 0 0 15px;
+}
+.bottomlink-item{
+    list-style: none;
+    display: inline-block;
+    line-height: normal;
+    letter-spacing: 0;
+    padding:0;
+    margin-right: 20px;
+    color:grey;
+}
+.bottomlink-item:hover{
+    color:lightgrey;
+
+}
+@media (max-width: 768px){
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .links{
+        padding-left: 15px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .bottom-links{
+        font-size:10px
+    }
+    .logo{
+        margin-bottom: 35px;
+    }
+}

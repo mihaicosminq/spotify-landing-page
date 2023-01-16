@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  width: auto;
+  margin: 50px auto 26px;
+}
+.card-title {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.card-subtitle {
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.background {
+  background-color: grey;
+  overflow: auto;
+  --background-base: #efefef;
+  background: var(--background-base, inherit);
+}
+
+@media (max-width: 768px) {
+  .App {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: auto;
+    margin: 35px 131px 26px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .App {
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+    width: auto;
+    margin: 50px 340px 26px;
+    box-sizing: border-box;
+  }
+}

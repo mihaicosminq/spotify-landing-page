@@ -1,0 +1,112 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: black;
+  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-left: 25px;
+  padding-right: 60px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.navbarheader {
+  z-index: 1020;
+  display: block;
+  left: 0;
+  right: 0;
+  background: black;
+  position: relative;
+  top: 0;
+  font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 54px;
+}
+.spotify-logo {
+  height: 50px;
+  width: 150px;
+  background-color: black;
+}
+#navbar {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+#navbar li a:hover {
+  color: green;
+}
+#mobile i {
+  color: white;
+}
+#mobile {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  .spotify-logo {
+    height: 40px;
+    width: 130px;
+    background-color: black;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 85px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: black;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  #navbar.active {
+    right: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+    padding-top: 10px;
+  }
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1200px) {
+  nav {
+    margin: 0 auto;
+    padding: 5px 50px;
+    max-width: 1170px;
+    box-sizing: border-box;
+  }
+  #navbar li a {
+    font-size: 17px;
+  }
+  #navbar li {
+    margin-top: 10px;
+  }
+  .spotify-logo {
+    margin-top: 10px;
+  }
+}
